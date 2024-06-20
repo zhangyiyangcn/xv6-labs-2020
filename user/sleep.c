@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
     // 如果命令行参数不等于2个，则打印错误信息
     if (argc != 2)
     {
-        printf("Sleep time \n");
+        printf("Sleep any time \n");
         exit(1);
     }
     // 把字符串型参数转换为整型
