@@ -21,7 +21,7 @@ int main(int argc, char *argv[])
     {
         // child
         read(ptoc[0], buf, 4);
-        printf("Child pid is %d: receive %s\n", getpid(), buf);
+        printf("Child pid %d: receive %s\n", getpid(), buf);
         write(ctop[1], "pong", strlen("pong"));
     }
     else
@@ -30,7 +30,7 @@ int main(int argc, char *argv[])
         write(ptoc[1], "ping", strlen("ping"));
         wait(NULL);
         read(ctop[0], buf, 4);
-        printf("Parent pid is %d: received %s\n", getpid(), buf);
+        printf("Parent pid %d: received %s\n", getpid(), buf);
     }
     exit(0);
 }
