@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     // 把字符串型参数转换为整型
     int time = atoi(argv[1]);
     // 调用系统调用 sleep 函数，传入整型参数
-    sleep(time);
+    sleep(time + 1);
     // 正常退出程序
     exit(0);
 }
