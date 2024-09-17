@@ -45,7 +45,7 @@ forktest(void)
     exit(1);
   }
 
-  print("fork test OK\n");
+  print("fork test ok\n");
 }
 
 int
