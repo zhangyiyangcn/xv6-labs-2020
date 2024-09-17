@@ -18,7 +18,7 @@ forktest(void)
 {
   int n, pid;
 
-  print("fork test 1\n");
+  print("fork test\n");
 
   for(n=0; n<N; n++){
     pid = fork();
